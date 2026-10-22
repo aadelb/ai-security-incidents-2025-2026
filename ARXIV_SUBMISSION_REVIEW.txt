@@ -338,9 +338,9 @@ READY FOR SUBMISSION CHECKLIST
 ================================================================================
 
 BEFORE SUBMITTING TO arXiv:
-  [ ] CRITICAL-1: Remove duplicate "Regulatory Interpretation" (lines 473-475)
-  [ ] CRITICAL-2: Add "Data Availability" subsection with full URLs
-  [ ] CRITICAL-3: Add CVSS citation to bibliography.bib and cite in text
+  [x] CRITICAL-1: Remove duplicate "Regulatory Interpretation" (lines 473-475)
+  [x] CRITICAL-2: Add "Data Availability" subsection with full URLs
+  [x] CRITICAL-3: Add CVSS citation to bibliography.bib and cite in text
   [ ] MODERATE-1: Add citation/footnote for "production AI agent" claim
   [ ] MODERATE-2: Obtain real Zenodo DOI or fix placeholder to valid format
   [ ] MINOR-1: (Optional) Expand Related Work if space allows

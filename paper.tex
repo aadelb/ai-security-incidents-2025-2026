@@ -95,7 +95,7 @@ The dataset was constructed using a 12-agent parallel research pipeline with the
 \begin{itemize}
     \item \textbf{Source Discovery Agents:} Systematic monitoring of security advisories, bug bounty disclosures, and threat intelligence feeds.
     \item \textbf{Credibility Assessment Agents:} Multi-source triangulation and confidence scoring based on source independence and reputation.
-    \item \textbf{Incident Classification Agents:} Taxonomy assignment and severity scoring according to CVSS-inspired criteria adapted for AI-specific risks~\cite{first2019cvss}.
+    \item \textbf{Incident Classification Agents:} Taxonomy assignment and severity scoring according to CVSS-inspired criteria~\cite{cvss2024} adapted for AI-specific risks.
     \item \textbf{Regulatory Mapping Agents:} EU AI Act Article mapping and compliance assessment.
 \end{itemize}
 
@@ -183,7 +183,7 @@ This tiered approach acknowledges the practical challenges of incident verificat
 
 \subsection{Severity Distribution}
 
-Severity assessment follows CVSS-inspired criteria adapted for AI-specific risks~\cite{first2019cvss}. Table~\ref{tab:severity} presents the distribution across all 55 incidents.
+Severity assessment follows CVSS-inspired criteria~\cite{cvss2024} adapted for AI-specific risks. Table~\ref{tab:severity} presents the distribution across all 55 incidents.
 
 \begin{table}[htbp]
 \caption{Severity Distribution}
@@ -516,9 +516,19 @@ As AI systems become increasingly integrated into critical infrastructure, under
 
 The AISecIncidents-2025-26 dataset, benchmark labels, and evaluation scripts are available at \url{https://huggingface.co/datasets/Ahmed-AdelB/ai-security-incidents-2025-2026}. We welcome contributions of new incidents, corrections to existing records, and improvements to the compliance mapping. By fostering a collaborative approach to AI security documentation, we aim to support the development of more secure and trustworthy AI systems.
 
-\section*{DATA AVAILABILITY}
+\subsection{Data Availability}
 
-The complete dataset (AISecIncidents-2025-26, 55 incidents, 12 verified) is publicly available at Zenodo \url{https://doi.org/[ZENODO_DOI]} under CC-BY-4.0 license, with source materials archived on GitHub.\footnote{\url{https://github.com/Ahmed-AdelB/ai-security-incidents-2025-2026}} Supplementary materials include: the raw incident data (\path{ai-leaks-incidents-public.json}); the verified subset (\path{ai-leaks-incidents-verified-v1.0.json}); the benchmark specification (\path{BENCHMARK_TASK.md}); and the complete schema (\path{DATASET_CARD.md}).
+All data artifacts from this research are publicly available without access restrictions:
+
+\begin{itemize}
+    \item \textbf{AISecIncidents-2025-26 Dataset:} 55 incidents with comprehensive metadata, severity classifications, confidence scores, and representative incident descriptions available at \url{https://huggingface.co/datasets/Ahmed-AdelB/ai-security-incidents-2025-2026}
+
+    \item \textbf{aisec-euaiact-v1.0 Benchmark:} 12 verified incidents with ground-truth multi-label EU AI Act Article classifications (Articles 9, 13, 15) for evaluating automated compliance classification systems, available in the same dataset repository.
+
+    \item \textbf{Evaluation Scripts and Metrics:} Reproducible Python scripts for computing F1-micro, F1-macro, Exact Match, Hamming Loss, and Mean Jaccard Index metrics available in the dataset repository for community submissions.
+\end{itemize}
+
+The dataset is released under Creative Commons Attribution 4.0 (CC-BY-4.0) for academic and security research use. All materials are available immediately upon publication with no access restrictions or embargo periods. We welcome community contributions, corrections, and extensions to the dataset and benchmark.
 
 \bibliographystyle{IEEEtran}
 \bibliography{bibliography}
